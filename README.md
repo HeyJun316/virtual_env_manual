@@ -340,7 +340,7 @@ group = vagrant
 SELINUX=disabled
 ```
 
-4. vagrantを再起動
+4. exitで出てvagrantを再起動
 ```
 $vagrant reload
 ```
