@@ -158,7 +158,7 @@ laravelを動作させるには、PHPのバージョン7以上が必要
 5. Nginxの状態確認
 > $sudo systemctl status nginx
 
-6. ブラウザにて http://192.168.33.10
+6. ブラウザにて http://192.168.33.18
 を入力して動いてるか確認
 
 7. もし動かなければexitで外に出て、vagrant reloadと、Vagrantfileのポートを確認
