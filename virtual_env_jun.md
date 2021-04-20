@@ -43,7 +43,7 @@
 
 3. Vagrant作業用ディレクトリを作成・移動し、下記のコマンドを実行
 > [コマンド]
->  $mkdir vagrant_test && cd vagrant_test && vagrant init centos/7
+> $mkdir vagrant_test && cd vagrant_test && vagrant init centos/7
 ---
 > [問題なければ以下の文言が表示される]
 >
@@ -93,6 +93,7 @@ Vagrant assumes that this means the command failed!
 > umount: /mnt: not mounted
 >
 >1. vagrant内で下記のコマンドを実行
+>
 > $sudo yum -y update kernel
 >
 >2. exitで出て下記のコマンドを実行
@@ -127,7 +128,7 @@ laravelを動作させるには、PHPのバージョン7以上が必要
 > $php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 2. ダウンロードファイルの実行
 > $php composer-setup.php
-3. composer-set.phpの削除
+3. composer-set.phpの削除1
 > $php -r "unlink('composer-setup.php');"
 4. composer.pharを移動させ、どのディレクトリでもcomposerコマンドを使用可能にする
 > $sudo mv composer.phar /usr/local/bin/composer
@@ -188,9 +189,10 @@ laravelを動作させるには、PHPのバージョン7以上が必要
 > $sudo vi /etc/my.cnf
 ---
 > [追加記述]
+>
 > validate-password=OFF
 
-3.MySQLサーバーを再起動する
+3. MySQLサーバーを再起動する
 > $sudo systemctl restart mysqld
 
 4. 取得したtemporary passwordでログイン
