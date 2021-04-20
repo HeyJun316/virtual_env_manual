@@ -99,9 +99,11 @@ Stderr from the command:
 umount: /mnt: not mounted
 ```
 
-2. vagrant内で下記のコマンドを実行
+2. vagrant内に入り、下記のコマンドを実行
 ```
-$sudo yum -y update kernel
+$vagrant ssh
+↓
+[vagrant@localhost ~]$sudo yum -y update kernel
 ```
 
 3. exitで出て下記のコマンドを実行
